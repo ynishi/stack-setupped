@@ -1,6 +1,6 @@
 FROM haskell:8.6.3
 
-ENV RESOLVER_VERSION=lts-13.16
+ENV RESOLVER_VERSION={{RESOLVER_VERSION}}
 
 RUN set -eux; \
   stack setup --resolver ${RESOLVER_VERSION} && \
